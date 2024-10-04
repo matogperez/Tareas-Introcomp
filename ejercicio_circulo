@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<math.h>
+
+int main (void){
+	int i, j, cx, cy, r, n, dij;
+	printf("Dame las coordenadas del centro del círculo\ncx: ");
+	scanf("%i", &cx);
+	printf("\ncy: ");
+	scanf("%i", &cy);
+	printf("Dame el radio del círculo\nr: ");
+	scanf("%i", &r);
+	n = 100;
+	for(i=0;i<n;i++){
+		for (j=0;j<n;j++){
+			dij = sqrt(((cx-i)*(cx-i)) + ((cy-j)*(cy-j)));
+			if(dij<r){
+				printf(" ");
+				}
+			else{
+				printf("X");
+				}
+		}		
+	printf("\n");
+	}
+
+}
