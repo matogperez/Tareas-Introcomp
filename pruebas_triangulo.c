@@ -10,7 +10,7 @@ int main (void){
 		
 		for(i=0;i<n;i++){
 		
-			t1= (i-5)-j;
+			t1= (i)-j;
 			
 			if(i<j){
 			
@@ -31,3 +31,4 @@ int main (void){
 
 
 }
+
